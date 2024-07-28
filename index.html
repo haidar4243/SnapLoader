@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SnapLoader Contact Form</title>
+  <title>Contact Form</title>
   <style>
     body {
       display: flex;
@@ -29,6 +29,7 @@
       max-width: 400px;
       width: 100%;
       margin-top: 20px;
+      box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
     }
 
     label {
@@ -39,12 +40,13 @@
 
     input[type="email"],
     textarea {
-      width: 100%;
+      width: 100%; /* Full width */
       padding: 10px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 16px;
+      box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
     }
 
     button {
@@ -77,7 +79,7 @@
   </style>
 </head>
 <body>
-  <h1>Contact Form</h1>
+  <h1>SnapLoader Contact Form</h1>
   <form action="https://formspree.io/f/mrbzprwb" method="POST">
     <label>
       Your email:
